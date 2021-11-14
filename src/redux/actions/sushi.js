@@ -13,7 +13,7 @@ export const fetchSushi = (sortBy, category) => (dispatch) => {
 
   axios
     .get(
-      `http://api.frolov.store/sushi?${
+      `https://api.frolov.store/sushi?${
         category !== null ? `group=${category}` : ""
       }&_sort=${sortBy.type}&_order=${sortBy.order}`
     )
