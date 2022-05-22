@@ -1,4 +1,5 @@
 import axios from "axios";
+import config from './../../config.js'
 
 export const setLoaded = (payload) => ({
   type: "SET_LOADED",
@@ -13,7 +14,7 @@ export const fetchSushi = (sortBy, category) => (dispatch) => {
 
   axios
     .get(
-      `https://api.frolov.store/sushi?${
+      `http://${config.hostUrl}/sushi?${
         category !== null ? `group=${category}` : ""
       }&_sort=${sortBy.type}&_order=${sortBy.order}`
     )

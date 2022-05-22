@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "../Button";
+import config from "../../config.js"
 
 function SushiBlock({
   _id,
@@ -24,7 +25,7 @@ function SushiBlock({
     const obj = {
       _id,
       name,
-      imageUrl: url,
+      imageUrl: `${config.imagesUrl}url`,
       price,
       type: availableTypes[activeType],
     };
