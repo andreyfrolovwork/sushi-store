@@ -25,7 +25,7 @@ function SushiBlock({
     const obj = {
       _id,
       name,
-      imageUrl: `${config.imagesUrl}url`,
+      imageUrl: url,
       price,
       type: availableTypes[activeType],
     };
