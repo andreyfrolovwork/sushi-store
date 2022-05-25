@@ -2,6 +2,7 @@
   "name": "sushi-store",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/sushi/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,6 +11,7 @@
     "camelcase": "^6.2.0",
     "classname": "^0.0.0",
     "classnames": "^2.3.1",
+    "history": "^5.3.0",
     "json-server": "^0.17.0",
     "node-sass": "6",
     "node-sass-import": "^2.0.1",
