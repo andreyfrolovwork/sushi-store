@@ -167,7 +167,7 @@ function Cart() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <Link to={`${config.linkUrl}/`}>
+                <Link to={`/`}>
                   <span>Сome back</span>
                 </Link>
               </a>
@@ -186,7 +186,7 @@ function Cart() {
             To place an order, go to the main page.
           </p>
 
-          <Link to={`${config.linkUrl}/`} className="button button--black">
+          <Link to={`/`} className="button button--black">
             <span>Сome back</span>
           </Link>
         </div>

@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <Link to={`${config.linkUrl}/`}>
+        <Link to={`/`}>
           <div className="header__logo">
             <img width="60" src={logoSvg} alt="sushi logo" />
             <div className="header__name">
@@ -23,7 +23,7 @@ function Header() {
         </Link>
 
         <div className="header__cart">
-          <Link to={`${config.linkUrl}/cart`}>
+          <Link to={`/cart`}>
             <Button className="button--cart">
               <span>{totalPrice.toFixed(2)} $</span>
               <div className="button__delimiter"></div>
