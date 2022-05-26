@@ -14,7 +14,7 @@ export const fetchSushi = (sortBy, category) => (dispatch) => {
 
   axios
     .get(
-      `http://${config.hostUrl}/sushi?${
+      `https://${config.hostUrl}/sushi?${
         category !== null ? `group=${category}` : ""
       }&_sort=${sortBy.type}&_order=${sortBy.order}`
     )

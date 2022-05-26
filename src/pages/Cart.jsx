@@ -9,6 +9,7 @@ import {
   plusCartItem,
   minusCartItem,
 } from "../redux/actions/cart";
+import config from "../config.js"
 
 function Cart() {
   const dispatch = useDispatch();
@@ -166,7 +167,7 @@ function Cart() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <Link to="/">
+                <Link to={`${config.linkUrl}/`}>
                   <span>Сome back</span>
                 </Link>
               </a>
@@ -185,7 +186,7 @@ function Cart() {
             To place an order, go to the main page.
           </p>
 
-          <Link to="/" className="button button--black">
+          <Link to={`${config.linkUrl}/`} className="button button--black">
             <span>Сome back</span>
           </Link>
         </div>

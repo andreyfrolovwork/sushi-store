@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 import logoSvg from "../assets/img/sushi-svg.svg";
 import Button from "./Button";
+import config from "../config.js"
 
 function Header() {
   const { totalPrice, totalCount } = useSelector(({ cart }) => cart);
@@ -11,7 +12,7 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <Link to="/">
+        <Link to={`${config.linkUrl}/`}>
           <div className="header__logo">
             <img width="60" src={logoSvg} alt="sushi logo" />
             <div className="header__name">
@@ -22,7 +23,7 @@ function Header() {
         </Link>
 
         <div className="header__cart">
-          <Link to="/cart">
+          <Link to={`${config.linkUrl}/cart`}>
             <Button className="button--cart">
               <span>{totalPrice.toFixed(2)} $</span>
               <div className="button__delimiter"></div>

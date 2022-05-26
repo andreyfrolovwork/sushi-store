@@ -1,6 +1,6 @@
 const config = {
-/*    hostUrl:'api.frolov.store',*/
     hostUrl:'frolov.store/apisushi',
-    imagesUrl:'http://frolov.store/apisushi/images/'
+    imagesUrl:'https://frolov.store/apisushi/images/',
+    linkUrl:'/sushi'
 }
 export  default config
